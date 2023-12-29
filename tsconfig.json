@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
+    "lib": ["esnext"],
     "sourceMap": true,
     "target": "esnext",
-    "module": "commonjs",
+    "module": "esnext",
+    "moduleResolution": "Node",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": true,
     "strict": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["vite/types/import-meta"]
   },
   "include": [
     "./*.js",
